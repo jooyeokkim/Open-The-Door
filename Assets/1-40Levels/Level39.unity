@@ -6448,7 +6448,7 @@ MonoBehaviour:
   - {fileID: 1915808635}
   diareward: {fileID: 1407650433}
   diarewardtext: {fileID: 994428859}
-  myrecord: {fileID: 0}
+  myrecord: {fileID: 953416825}
   time: {fileID: 950784519}
   clearpanel: {fileID: 2039804054}
 --- !u!82 &878432409
@@ -7737,6 +7737,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224179548492013560, guid: 3c7275f26722ac1419db5ad17647f58c,
     type: 2}
   m_PrefabInternal: {fileID: 953416823}
+--- !u!114 &953416825 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114566504298764508, guid: 3c7275f26722ac1419db5ad17647f58c,
+    type: 2}
+  m_PrefabInternal: {fileID: 953416823}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &953872209 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 9dc9a634566aeaa44a5640b300c404b7, type: 3}
