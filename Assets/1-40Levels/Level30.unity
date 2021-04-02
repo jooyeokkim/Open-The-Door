@@ -4151,7 +4151,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600036694}
-  m_LocalRotation: {x: 0.6835493, y: -0.6835492, z: -0.18099837, w: 0.18099844}
+  m_LocalRotation: {x: 0.68354934, y: -0.6835493, z: -0.18099838, w: 0.18099846}
   m_LocalPosition: {x: -0.961, y: 0.4855, z: 0.563}
   m_LocalScale: {x: 0.059999935, y: 0.9333345, z: 0.9333345}
   m_Children: []
@@ -9616,7 +9616,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837480466}
-  m_LocalRotation: {x: 0.6835493, y: -0.6835492, z: -0.18099837, w: 0.18099844}
+  m_LocalRotation: {x: 0.68354934, y: -0.6835493, z: -0.18099838, w: 0.18099846}
   m_LocalPosition: {x: -0.954, y: -0.6636, z: 0.574}
   m_LocalScale: {x: 0.059999935, y: 0.9333345, z: 0.9333345}
   m_Children: []
@@ -9954,7 +9954,7 @@ MonoBehaviour:
   - {fileID: 1915808635}
   diareward: {fileID: 1407650433}
   diarewardtext: {fileID: 994428859}
-  myrecord: {fileID: 0}
+  myrecord: {fileID: 1893714948}
   time: {fileID: 950784519}
   clearpanel: {fileID: 2039804054}
 --- !u!82 &878432409
@@ -17358,6 +17358,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224179548492013560, guid: 3c7275f26722ac1419db5ad17647f58c,
     type: 2}
   m_PrefabInternal: {fileID: 1893714946}
+--- !u!114 &1893714948 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114566504298764508, guid: 3c7275f26722ac1419db5ad17647f58c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1893714946}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!20 &1911654203 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20770948114273104, guid: 2a1513ba85f79c14b945170fb02c2df3,

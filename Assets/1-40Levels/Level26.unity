@@ -5463,6 +5463,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -2.968
       objectReference: {fileID: 0}
+    - target: {fileID: 114043516839065656, guid: b87333cf054aa314ea4fb14166655451,
+        type: 2}
+      propertyPath: myrecord
+      value: 
+      objectReference: {fileID: 644863420}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b87333cf054aa314ea4fb14166655451, type: 2}
   m_IsPrefabParent: 0
@@ -5701,6 +5706,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224179548492013560, guid: 3c7275f26722ac1419db5ad17647f58c,
     type: 2}
   m_PrefabInternal: {fileID: 644863418}
+--- !u!114 &644863420 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114566504298764508, guid: 3c7275f26722ac1419db5ad17647f58c,
+    type: 2}
+  m_PrefabInternal: {fileID: 644863418}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &655586989
 GameObject:
   m_ObjectHideFlags: 0
