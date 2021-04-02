@@ -5269,6 +5269,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224179548492013560, guid: 3c7275f26722ac1419db5ad17647f58c,
     type: 2}
   m_PrefabInternal: {fileID: 753001157}
+--- !u!114 &753001159 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114566504298764508, guid: 3c7275f26722ac1419db5ad17647f58c,
+    type: 2}
+  m_PrefabInternal: {fileID: 753001157}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &763598653
 Prefab:
   m_ObjectHideFlags: 0
@@ -6849,7 +6855,7 @@ MonoBehaviour:
   - {fileID: 1194292102}
   diareward: {fileID: 1199729805}
   diarewardtext: {fileID: 60499284}
-  myrecord: {fileID: 0}
+  myrecord: {fileID: 753001159}
   time: {fileID: 184615063}
   clearpanel: {fileID: 989341047}
 --- !u!82 &878432409
