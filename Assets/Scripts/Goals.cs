@@ -28,12 +28,12 @@ public class Goals : MonoBehaviour {
 		clearpanel.SetActive (false);
 		stageLevel = SceneManager.GetActiveScene ().name;
 		myrecord.text = PlayerPrefs.GetString (stageLevel, "--:--:--");
+		Debug.Log ("lev"+PlayerPrefs.GetInt ("CurrentLevel", 0));
 	}
 
 	public void UpCount() {
 		if(!isgameover) count++;
 		if (!isgameover && count == 3) {
-			Debug.Log ("GAME CLEAR!");
 			clear.Play ();
 			time.gameover ();
 			gamerecord = time.getrecord();
@@ -47,7 +47,6 @@ public class Goals : MonoBehaviour {
 				int sec = (secstring [0] - '0') * 10 + (secstring [1] - '0');
 				float millisec = (millisecstring [0] - '0') * 10 + (millisecstring [1] - '0');
 				if(gamerecord<=(min*60+sec+millisec/100)){
-					Debug.Log (gamerecord + "and" + (min * 60 + sec + millisec/100));
 					diascore = 4-i;
 					if (4 - i - bestdia <= 0)
 						diarewardtext.text = "+00";
@@ -57,7 +56,6 @@ public class Goals : MonoBehaviour {
 				}
 				if (i == 3 && gamerecord > (min * 60 + sec + millisec/100)) {
 					diarewardtext.text = "+00";
-					Debug.Log (gamerecord + "and" + (min * 60 + sec + millisec/100));
 				}
 			}
 			isgameover = true;
