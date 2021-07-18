@@ -28,7 +28,6 @@ public class Goals : MonoBehaviour {
 		clearpanel.SetActive (false);
 		stageLevel = SceneManager.GetActiveScene ().name;
 		myrecord.text = PlayerPrefs.GetString (stageLevel, "--:--:--");
-		Debug.Log ("lev"+PlayerPrefs.GetInt ("CurrentLevel", 0));
 	}
 
 	public void UpCount() {
@@ -37,7 +36,7 @@ public class Goals : MonoBehaviour {
 			clear.Play ();
 			time.gameover ();
 			gamerecord = time.getrecord();
-			float bestrecord = PlayerPrefs.GetFloat (stageLevel + "Bestrecord", float.MaxValue);
+			float bestrecord = PlayerPrefs.GetFloat (stageLevel + "Bestrecord", 1.0E+20f);
 			int bestdia = PlayerPrefs.GetInt (stageLevel + "Bestdia", 0);
 			for (int i = 0; i < 4; i++) {
 				minstring = dia [i].text.ToString ().Substring (0, 2);
@@ -59,6 +58,8 @@ public class Goals : MonoBehaviour {
 				}
 			}
 			isgameover = true;
+			Debug.Log (gamerecord);
+			Debug.Log ((float)Math.Round (gamerecord, 4));
 			if (myrecord.text == "--:--:--" || gamerecord < bestrecord)
 				saveData ();
 			diareward.gameObject.SetActive (true);
@@ -70,7 +71,7 @@ public class Goals : MonoBehaviour {
 	}
 
 	void saveData() {		
-		PlayerPrefs.SetFloat (stageLevel + "Bestrecord", gamerecord);
+		PlayerPrefs.SetFloat (stageLevel + "Bestrecord", (float)Math.Round(gamerecord,4));
 		PlayerPrefs.SetInt (stageLevel + "Bestdia", diascore);
 		PlayerPrefs.SetString (stageLevel, time.getTimertext());
 		int currentLevel = PlayerPrefs.GetInt ("CurrentLevel", 1);

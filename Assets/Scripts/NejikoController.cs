@@ -35,7 +35,6 @@ public class NejikoController : MonoBehaviour {
 	void Update () {
 		if (scharacter.GetSelect ()==this.tag) {
 			if (controller.isGrounded) {
-				Debug.Log (jumpbutton.IsInteractable());
 				if (jumper.GetJumpState()&&jumpbutton.IsInteractable()) { //for moblie
 				//if (Input.GetKeyDown("space")&&jumpbutton.IsInteractable()) { //for pc
 					moveDirection.y = speedJump;

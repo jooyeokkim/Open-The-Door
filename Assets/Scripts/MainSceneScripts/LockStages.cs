@@ -35,11 +35,8 @@ public class LockStages : MonoBehaviour {
 			if (i <= userLevel) {
 				int userdia = PlayerPrefs.GetInt ("Level" + i + "Bestdia", 0);
 				diaSum += userdia;
-				diaSumText.text = diaSum.ToString ();
 				for (int j = 1; j <= userdia; j++) {
-					Debug.Log (j);
 					Button diaImage = dia.transform.GetChild (j - 1).GetComponent<Button> ();
-					Debug.Log (diaImage.name);
 					diaImage.image.color = new Color (114 / 255f, 233 / 255f, 249 / 255f, 255 / 255f);
 				}
 			}
@@ -49,5 +46,7 @@ public class LockStages : MonoBehaviour {
 				image.sprite = lockimage;
 			}
 		}
+		PlayerPrefs.SetInt ("Totaldia", diaSum);
+		diaSumText.text = diaSum.ToString ();
 	}
 }
