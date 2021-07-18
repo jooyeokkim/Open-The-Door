@@ -13539,13 +13539,14 @@ GameObject:
   - component: {fileID: 1232131556}
   - component: {fileID: 1232131555}
   - component: {fileID: 1232131554}
+  - component: {fileID: 1232131558}
   m_Layer: 5
   m_Name: CreateAccount_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1232131554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13651,6 +13652,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 309.40002, y: 169.79999}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1232131558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1232131553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510645d91bf851047ac79ec06bb7fe81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IDInput: {fileID: 0}
+  PassInput: {fileID: 0}
+  ConfirmPassInput: {fileID: 0}
+  createAccount: {fileID: 0}
+  messagePanel: {fileID: 0}
+  messagePanelClose: {fileID: 0}
+  messagePanelText: {fileID: 0}
+  close: {fileID: 0}
+  LoginUrl: 
 --- !u!1001 &1236910977
 Prefab:
   m_ObjectHideFlags: 0
@@ -18904,7 +18925,7 @@ GameObject:
   - component: {fileID: 1769739191}
   - component: {fileID: 1769739190}
   m_Layer: 5
-  m_Name: Error_Panel
+  m_Name: Message_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
