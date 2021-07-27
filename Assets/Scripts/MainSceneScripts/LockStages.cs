@@ -16,9 +16,10 @@ public class LockStages : MonoBehaviour {
 	// Use this for initialization
 	private int userLevel;
 	void Start () {
-		//PlayerPrefs.DeleteAll ();
+		// PlayerPrefs.DeleteAll ();
 		diaSum = 0;
 		userLevel = PlayerPrefs.GetInt ("CurrentLevel", 1);
+		Debug.Log (userLevel);
 		loadLevel ();
 	}
 

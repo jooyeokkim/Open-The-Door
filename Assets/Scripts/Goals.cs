@@ -75,7 +75,7 @@ public class Goals : MonoBehaviour {
 		PlayerPrefs.SetInt (stageLevel + "Bestdia", diascore);
 		PlayerPrefs.SetString (stageLevel, time.getTimertext());
 		int currentLevel = PlayerPrefs.GetInt ("CurrentLevel", 1);
-		if (currentLevel == Int32.Parse (stageLevel.Substring (5)) && currentLevel<40)
+		if (currentLevel == Int32.Parse (stageLevel.Substring (5)) && currentLevel<41)
 			PlayerPrefs.SetInt ("CurrentLevel", currentLevel + 1);
 	}
 }
