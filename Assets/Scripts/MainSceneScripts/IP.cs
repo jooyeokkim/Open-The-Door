@@ -4,6 +4,5 @@ using UnityEngine;
 
 public static class IP
 {
-	// static string creatorIP = "121.153.146.121";
-	public static string creatorIP = "localhost";
+	public static string creatorIP = "ec2-54-180-152-253.ap-northeast-2.compute.amazonaws.com";
 }

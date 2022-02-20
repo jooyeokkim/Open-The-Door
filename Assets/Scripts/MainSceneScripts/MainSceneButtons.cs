@@ -6,7 +6,6 @@ using UnityEngine;
 public class MainSceneButtons : MonoBehaviour {
 	public GameObject copyrightPanel;
 	public GameObject gameinfoPanel;
-	public GameObject memoPanel;
 	public GameObject accountPanel;
 	public GameObject createAccountPanel;
 	public GameObject SaveDataPanel;
@@ -14,12 +13,12 @@ public class MainSceneButtons : MonoBehaviour {
 	public GameObject ErrorPanel;
 	bool isactiveC;
 	bool isactiveG;
-	bool isactiveM;
 	bool isactiveA;
 	bool isactiveAC;
 	bool isactiveAS;
 	bool isactiveAL;
 	public GameObject loading;
+	string webURL = "http://ec2-54-180-152-253.ap-northeast-2.compute.amazonaws.com:8080/home";
 
 	public void OpenCopyright(){
 		if (isactiveC == false) {
@@ -42,13 +41,7 @@ public class MainSceneButtons : MonoBehaviour {
 	}
 
 	public void OpenMemo(){
-		if (isactiveM == false) {
-			memoPanel.SetActive (true);
-			isactiveM = true;
-		} else {
-			memoPanel.SetActive (false);
-			isactiveM = false;
-		}
+		Application.OpenURL (webURL);
 	}
 
 	public void OpenAccount(){

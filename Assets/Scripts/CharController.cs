@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NejikoController : MonoBehaviour {
+public class CharController : MonoBehaviour {
 	CharacterController controller;
 	Animator animator;
 	AudioSource walksound;
@@ -46,18 +46,17 @@ public class NejikoController : MonoBehaviour {
 			}
 			if (moveDirection.z < -0.1) {
 				//transform.Rotate (0, Input.GetAxis ("Horizontal"), 0); //for pc
-				transform.Rotate (0, stick.GetJoystickPosition ().x, 0);
+				transform.Rotate (0, stick.GetJoystickPosition ().x, 0); //for moblie
 				moveDirection.z = stick.GetJoystickPosition().y * 5;
 			} else {
 				//transform.Rotate (0, Input.GetAxis ("Horizontal") * 2, 0); //for pc
-				//moveDirection.z = Input.GetAxis ("Vertical") * speedZ; //for jump test
-				transform.Rotate (0, stick.GetJoystickPosition ().x * 2, 0);
+				transform.Rotate (0, stick.GetJoystickPosition ().x * 2, 0); //for moblie
 				moveDirection.z = stick.GetJoystickPosition().y * speedZ;
 			}
-			animator.SetFloat ("h", Input.GetAxis ("Horizontal")); //for pc
-			animator.SetFloat ("h", stick.GetJoystickPosition().x);
-			animator.SetFloat ("v", Input.GetAxis ("Vertical")); //for pc
-			animator.SetFloat ("v", stick.GetJoystickPosition().y);
+			// animator.SetFloat ("h", Input.GetAxis ("Horizontal")); //for pc
+			animator.SetFloat ("h", stick.GetJoystickPosition().x); //for moblie
+			// animator.SetFloat ("v", Input.GetAxis ("Vertical")); //for pc
+			animator.SetFloat ("v", stick.GetJoystickPosition().y); //for moblie
 			if ((Input.GetAxis("Vertical")>0.1 || stick.GetJoystickPosition ().y > 0.1 )&& !walksound.isPlaying)
 				walksound.Play ();
 			moveDirection.y -= gravity * Time.deltaTime;
@@ -78,13 +77,11 @@ public class NejikoController : MonoBehaviour {
 		if(Input.GetKey(KeyCode.C)) scharacter.Change("C3");
 	}
 	public void runbutton(){
-		Debug.Log ("run");
 		speedZ = 8;
 		run.interactable = false;
 		walk.interactable = true;
 	}
 	public void walkbutton(){
-		Debug.Log ("walk");
 		speedZ = 5;
 		run.interactable = true;
 		walk.interactable = false;

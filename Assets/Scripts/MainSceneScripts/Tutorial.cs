@@ -10,6 +10,7 @@ public class Tutorial : MonoBehaviour {
 	int imageindex;
 	public Sprite[] uiimages;
 	void Start () {
+		//PlayerPrefs.DeleteAll (); initializing test
 		imageindex = 0;
 		mainimage.sprite = uiimages [0];
 	}

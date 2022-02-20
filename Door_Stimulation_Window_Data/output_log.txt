@@ -2,28 +2,29 @@ Initialize engine version: 5.6.7f1 (e80cc3114ac1)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Renderer: NVIDIA GeForce GTX 650 Ti (ID=0x11c6)
     Vendor:   NVIDIA
-    VRAM:     2007 MB
-    Driver:   26.21.14.3200
+    VRAM:     984 MB
+    Driver:   30.0.14.7141
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.107 seconds
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\김주역\New Unity Project (5)\Door_Stimulation_Window_Data\Managed\System.Xml.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.478 seconds
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\Door_Stimulation_Window_Data\Managed\System.Xml.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1081 at -1920,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 10.946800 ms
+UnloadTime: 1.089800 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4424 -> priority: 1 
-  Thread -> id: 2954 -> priority: 1 
+  Thread -> id: 3a0 -> priority: 1 
+  Thread -> id: 3c28 -> priority: 1 
