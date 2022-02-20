@@ -35,8 +35,8 @@ public class CharController : MonoBehaviour {
 	void Update () {
 		if (scharacter.GetSelect ()==this.tag) {
 			if (controller.isGrounded) {
-				if (jumper.GetJumpState()&&jumpbutton.IsInteractable()) { //for moblie
-				//if (Input.GetKeyDown("space")&&jumpbutton.IsInteractable()) { //for pc
+				//if (jumper.GetJumpState()&&jumpbutton.IsInteractable()) { //for moblie
+				if (Input.GetKeyDown("space")&&jumpbutton.IsInteractable()) { //for pc
 					moveDirection.y = speedJump;
 					animator.Play ("JUMP00");
 					jumper.ChangeJumpState ();
@@ -45,18 +45,14 @@ public class CharController : MonoBehaviour {
 				}
 			}
 			if (moveDirection.z < -0.1) {
-				//transform.Rotate (0, Input.GetAxis ("Horizontal"), 0); //for pc
-				transform.Rotate (0, stick.GetJoystickPosition ().x, 0); //for moblie
+				transform.Rotate (0, stick.GetJoystickPosition ().x, 0);
 				moveDirection.z = stick.GetJoystickPosition().y * 5;
 			} else {
-				//transform.Rotate (0, Input.GetAxis ("Horizontal") * 2, 0); //for pc
-				transform.Rotate (0, stick.GetJoystickPosition ().x * 2, 0); //for moblie
+				transform.Rotate (0, stick.GetJoystickPosition ().x * 2, 0);
 				moveDirection.z = stick.GetJoystickPosition().y * speedZ;
 			}
-			// animator.SetFloat ("h", Input.GetAxis ("Horizontal")); //for pc
-			animator.SetFloat ("h", stick.GetJoystickPosition().x); //for moblie
-			// animator.SetFloat ("v", Input.GetAxis ("Vertical")); //for pc
-			animator.SetFloat ("v", stick.GetJoystickPosition().y); //for moblie
+			animator.SetFloat ("h", stick.GetJoystickPosition().x);
+			animator.SetFloat ("v", stick.GetJoystickPosition().y);
 			if ((Input.GetAxis("Vertical")>0.1 || stick.GetJoystickPosition ().y > 0.1 )&& !walksound.isPlaying)
 				walksound.Play ();
 			moveDirection.y -= gravity * Time.deltaTime;
