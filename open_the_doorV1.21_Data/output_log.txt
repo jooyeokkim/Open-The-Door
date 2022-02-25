@@ -1,0 +1,51 @@
+Initialize engine version: 5.6.7f1 (e80cc3114ac1)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 650 Ti (ID=0x11c6)
+    Vendor:   NVIDIA
+    VRAM:     984 MB
+    Driver:   30.0.14.7141
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.027 seconds
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\jooye\Unityotd\Open-The-Door\open_the_doorV1.21_Data\Managed\System.Xml.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1081 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 21.126701 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 17.490501 ms
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 4714.
+Total: 9.954700 ms (FindLiveObjects: 0.276300 ms CreateObjectMapping: 0.073300 ms MarkObjects: 5.602900 ms  DeleteObjects: 4.000400 ms)
+
+5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2c34 -> priority: 1 
+  Thread -> id: 1a20 -> priority: 1 
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 17.229900 ms
+
+Unloading 115 unused Assets to reduce memory usage. Loaded Objects now: 3008.
+Total: 12.946501 ms (FindLiveObjects: 0.208300 ms CreateObjectMapping: 0.051500 ms MarkObjects: 0.815100 ms  DeleteObjects: 11.870100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.004800 ms
+
+Unloading 170 unused Assets to reduce memory usage. Loaded Objects now: 1926.
+Total: 5.522000 ms (FindLiveObjects: 0.127100 ms CreateObjectMapping: 0.048800 ms MarkObjects: 0.780000 ms  DeleteObjects: 4.565000 ms)
+

@@ -35,8 +35,8 @@ public class CharController : MonoBehaviour {
 	void Update () {
 		if (scharacter.GetSelect ()==this.tag) {
 			if (controller.isGrounded) {
-				//if (jumper.GetJumpState()&&jumpbutton.IsInteractable()) { //for moblie
-				if (Input.GetKeyDown("space")&&jumpbutton.IsInteractable()) { //for pc
+				if (jumper.GetJumpState()&&jumpbutton.IsInteractable()) { //for moblie
+				//if (Input.GetKeyDown("space")&&jumpbutton.IsInteractable()) { //for pc
 					moveDirection.y = speedJump;
 					animator.Play ("JUMP00");
 					jumper.ChangeJumpState ();

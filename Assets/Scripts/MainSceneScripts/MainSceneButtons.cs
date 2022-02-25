@@ -18,7 +18,7 @@ public class MainSceneButtons : MonoBehaviour {
 	bool isactiveAS;
 	bool isactiveAL;
 	public GameObject loading;
-	string webURL = "http://ec2-54-180-152-253.ap-northeast-2.compute.amazonaws.com:8080/home";
+	string webURL = "http://ec2-54-180-152-253.ap-northeast-2.compute.amazonaws.com/home";
 
 	public void OpenCopyright(){
 		if (isactiveC == false) {
