@@ -12362,7 +12362,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Name : Open The Door!\r\nVersion : 1.0.21\nCreator : JooYeok Kim\r\nCompany
-    : None\r\nTool : Unity, C#\r\nFinish Date : 2021"
+    : None\r\nTool : Unity, C#\r\nFinish Date : 2022"
 --- !u!222 &1179713328
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -21,9 +21,9 @@ public class Account : MonoBehaviour {
 	int currentLevel;
 
 	void Start(){
-		LoginUrl = "http://"+IP.creatorIP+"/otd/create_account.php";
-		SaveUrl = "http://"+IP.creatorIP+"/otd/save.php";
-		LoadUrl = "http://"+IP.creatorIP+"/otd/load.php";
+		LoginUrl = "http://"+IP.creatorIP+":8080/otd/create_account.php";
+		SaveUrl = "http://"+IP.creatorIP+":8080/otd/save.php";
+		LoadUrl = "http://"+IP.creatorIP+":8080/otd/load.php";
 		currentLevel = PlayerPrefs.GetInt ("CurrentLevel", 1);
 	}
 
